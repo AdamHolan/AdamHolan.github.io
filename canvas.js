@@ -22,7 +22,7 @@ function spawnWord(word) {
     var offset = 0;
     console.log(parsedWord)
     parsedWord.forEach(char => {
-        var l = new Letter(150+offset, 0);
+        var l = new Letter(100+offset, 0);
         let size = l.size;
         var blocks = l.spawn(char)
         blocks.forEach(block => objects.push(block));
