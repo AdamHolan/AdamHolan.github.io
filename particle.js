@@ -22,12 +22,14 @@ class Particle {
 
     }
     display() {
-        c.beginPath();
-        c.arc(this.x, this.y, this.size, 0, 2*Math.PI, false);
+        // c.beginPath();
+        // c.arc(this.x, this.y, this.size, 0, 2*Math.PI, false);
+        
         c.strokeStyle = this.colour;
         c.fillStyle = c.strokeStyle;
-        c.fill();
-        c.stroke(); 
+        c.fillRect(this.x, this.y, this.size, this.size)
+          // c.fill();
+        // c.stroke(); 
     }
 
     bounce() {
